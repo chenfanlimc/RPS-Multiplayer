@@ -31,11 +31,13 @@ $(document).ready(function () {
             userOne = $("#user-name").val();
             $(".player-1-info").empty();
             $(".player-1-info").text("Player One: " + userOne);
-        } else {
+        } else if(userOne !== "" && userTwo === ""){
             userTwo = $("#user-name").val();
             $(".player-2-info").empty();
             $(".player-2-info").text("Player Two: " + userTwo);
             game.beginGame();
+        } else if(userOne !== "" && userTwo !== ""){
+            $(".result-info").text("You can't add a third player! This is a two player game.")
         }
     })
 
