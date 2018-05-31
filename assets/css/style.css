@@ -1,11 +1,30 @@
 .container{
     text-align: center;
+    width: 100%;
+    display: table;
 }
 
 .player-border{
     border: 2px solid black;
+    height: 150px;
+    background-color: white;
 }
 
 .game-info-header{
     margin-top: 2%;
 }
+
+.chat-history{
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+}
+
+body{
+    background-image: url("../images/128-129.jpg");
+}
+
+#message-input{
+    width: 80%;
+}
+
